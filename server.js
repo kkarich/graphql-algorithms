@@ -143,6 +143,7 @@ app.use('/graphql', graphqlHTTP({
     rootValue: root,
     graphiql: true,
 }));
-app.listen(443, function () {
-    console.log('Running a GraphQL API server at localhost:443/graphql');
+var port = process.env.PORT || 8080;
+app.listen(port, function () {
+    console.log("Running a GraphQL API server at localhost:" + port + "}/graphql");
 });
