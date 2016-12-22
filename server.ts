@@ -149,12 +149,12 @@ var Schema = new graphql.GraphQLSchema({
 });
 
 var app = express();
-app.use('/graphql', graphqlHTTP({
+app.use('/', graphqlHTTP({
     schema: Schema,
     rootValue: root,
     graphiql: true,
 }));
 var port = process.env.PORT || 8080;
 app.listen(port, () => {
-    console.log(`Running a GraphQL API server at localhost:${port}}/graphql`);
+    console.log(`Running a GraphQL API server at localhost:${port}}`);
 });

@@ -138,7 +138,7 @@ var Schema = new graphql.GraphQLSchema({
     query: queryType
 });
 var app = express();
-app.use('/graphql', graphqlHTTP({
+app.use('/', graphqlHTTP({
     schema: Schema,
     rootValue: root,
     graphiql: true,
