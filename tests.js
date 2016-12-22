@@ -4,7 +4,7 @@ var algorithms_1 = require("./algorithms");
 var expect = chai.expect;
 describe("Sorting Algorithm", function () {
     var initialArrays = [[5, 0, 7, 3, 9, 4, 2, 8, 6, 1], [7, 9, 2, 1, 3, 5, 8, 6, 4, 0], [3, 1, 5, 8, 4, 0, 7, 2, 6, 9], [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]];
-    var sortedArrays = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9], [10, 1, 2, 3, 4, 5, 6, 7, 8, 9], [10, 1, 2, 3, 4, 5, 6, 7, 8, 9], [10, 1, 2, 3, 4, 5, 6, 7, 8, 9]];
+    var sortedArrays = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]];
     describe("Bubble Sort", function () {
         var sortedBSObjects = [];
         initialArrays.forEach(function (array) {
